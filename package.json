@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "weback"
+    "build": "webpack --config webpack.config.js"
   },
   "author": "OJIMMA CHIMA PETER <chimaojimma@gmail.com>",
   "license": "ISC",
