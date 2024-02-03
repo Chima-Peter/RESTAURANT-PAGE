@@ -1,40 +1,50 @@
 @font-face {
     font-family: myFont;
-    src: url(../fonts/Lato-Black.ttf);
+    src: url(../fonts/Raleway-Light.ttf);
+}
+@font-face {
+    font-family: myHeaderFont;
+    src: url(../fonts/Merriweather-Black.ttf);
 }
 
 body {
-    padding: 20px 10%;
+    padding: 20px 20px 0px 10%;
     margin: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     font-family:myFont, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+h1, h2, h3, h4, h5,.header nav button {
+    font-family:myHeaderFont, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 .about {
     background-color: magenta;
 }
 .home {
-    background-color: lightblue;
+    background-color: white;
 }
+/* NAV BAR */
 .header {
-    margin: 0px 0px 20% 0px;
     padding: 0px;
+    margin: 0px 0px 20% 0px;
 }
 .header nav {
     width: 100%;
     position: fixed;
     backdrop-filter: blur(5px);
     display: flex;
-    gap: 10px;
+    gap: 5px;
     flex-wrap: wrap;
     margin: 0px;
     box-sizing: border-box;
     height: fit-content;
-    padding: 0px 0px 20px 0;
     z-index: 99;
+    padding: 20px 0;
 }
 .header nav button {
     background-color: inherit;
     border: none;
-    font-size: 1rem;
     padding: 10px;
     letter-spacing: 2px;
     font-weight: bold;
@@ -45,62 +55,93 @@ body {
     border-radius: 10px;
 }
 
+/* HOME TAB */
+
 .homeContainer {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
     width: 100%;
+    justify-content: space-between;
     height: fit-content;
+    box-sizing: border-box;
+    box-shadow: 1px 2px 0.5px 0.2px darkgrey;
 }
-.homeContainer > div {
-    max-width: (40%, 500px);
-}
+
 
 .homeWrapper {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 10px;
+    flex: 1;
+    width: fit-content;
 }
-.homeWrapper div {
-    display: flex;
-    gap: 0px;
-    align-items: end;
-}
+
 .homeWrapper div h2 {
     font-size: 70px;
-    color: darkblue;
+    color: black;
     padding: 0px;
+    font-size: 2.5rem;
     margin: 0px;
 }
-.homeWrapper div h4 {
+.homeWrapper p {
+    width: 45ch;
+    line-height: 2;
+    letter-spacing: 2px;
+    font-size: 1rem;
     color: black;
     padding: 0px;
     margin: 0px;
-    font-size: 1.5rem;
-}
-.homeWrapper p {
-    width: 30ch;
-    line-height: 2;
-    letter-spacing: 2px;
-    font-size: 0.8rem;
-    color: darkblue;
-    padding: 0px;
-    margin: 0px;
     font-size: 0.8rem;
 }
-.homeWrapper button {
-    background-color: red;
+.homeWrapper button, .aboutContainer button {
+    background-color: orangered;
     color: white;
     padding: 10px 20px;
     width: fit-content;
-    border: 1px solid red;
-    border-radius: 20px;
+    border: 1px solid orangered;
     font-weight: bolder;
 }
-.homeImageDiv {
-    background: url('../images/image8.jpg');
+.homeImage {
+    background: url('../images/image3.jpg');
+}
+.homeImageDiv,.aboutContainer {
+    width: max(50%, 300px);
+}
+.homeImageDiv, .homeWrapper {
+    height: fit-content;
+}
+
+
+
+/* ABOUT SECTION ON HOME TAB */
+.aboutWrapper {
     width: 100%;
-    height: 70%;
-    box-shadow: -1px 5px 10px 0.3px black;
-    border-radius: 50%;
+    padding-top: 50px;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.aboutContainer {
+    padding-top: 40px;
+    display: flex;
+    gap: 20px;
+    width: fit-content;
+    flex-direction: column;
+    height: fit-content;
+}
+.aboutContainer h4 {
+    font-size: 2.5rem;
+    margin: 0;
+    text-decoration: underline;
+    padding: 0;
+}
+.aboutContainer p {
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
+    width: 40ch;
+    letter-spacing: 3px;
 }

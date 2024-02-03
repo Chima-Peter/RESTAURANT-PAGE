@@ -1,8 +1,19 @@
 import  "../css/style.css";
 import { Home } from './home';
+import { clear } from './clear';
+import { Service } from './services'
 
-const button = document.querySelector("button");
+const buttons = document.querySelectorAll("button");
 
-button.addEventListener('click', () => {
-    Home.run();
+Home.welcome();
+
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+        clear();
+        if (button.textContent === 'HOME') {
+            Home.welcome();
+        } else if (button.textContent === 'SERVICES') {
+            Service.first();
+        }
+    })
 });
