@@ -3,9 +3,10 @@ import image from '../images/image3.jpg';
 import cake from '../images/image5.jpg';
 
 export const Home = (function() {
+    const body = document.querySelector('body');
+    body.style.backgroundColor = 'whitesmoke';
     const content = document.querySelector('#content');
-    const body = document.querySelector('.home');
-    body.classList.add('home');
+    
     const welcome = () => {
         const container = document.createElement('div');
         const imageDiv = document.createElement('div');

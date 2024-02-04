@@ -1,14 +1,11 @@
-const Service = (function () {
+export const Service = (function () {
     const body = document.querySelector('body');
-    body.classList.remove('home');
-    body.classList.remove('contact');
-    body.classList.add('service');
-
+    body.style.backgroundColor = 'whitesmoke';
     const content = document.querySelector('#content');
     
     const first = () => {
         const firstDiv = document.createElement('div');
-        const firstHeader = document.createElement('h3');
+        const firstHeader = document.createElement('h4');
         const firstParagraph = document.createElement('p');
         const firstButton = document.createElement('button');
 
@@ -26,4 +23,4 @@ const Service = (function () {
         content.appendChild(firstDiv);
     }
     return { first };
-});
+})();

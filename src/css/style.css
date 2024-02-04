@@ -18,12 +18,6 @@ body {
 h1, h2, h3, h4, h5,.header nav button {
     font-family:myHeaderFont, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
-.about {
-    background-color: magenta;
-}
-.home {
-    background-color: white;
-}
 /* NAV BAR */
 .header {
     padding: 0px;
@@ -65,7 +59,7 @@ h1, h2, h3, h4, h5,.header nav button {
     justify-content: space-between;
     height: fit-content;
     box-sizing: border-box;
-    box-shadow: 1px 2px 0.5px 0.2px darkgrey;
+    box-shadow: 0px 3px 0.8px 0.3px darkgrey;
 }
 
 
@@ -94,7 +88,7 @@ h1, h2, h3, h4, h5,.header nav button {
     margin: 0px;
     font-size: 0.8rem;
 }
-.homeWrapper button, .aboutContainer button {
+.homeWrapper button, .aboutContainer button, .firstServiceDiv button {
     background-color: orangered;
     color: white;
     padding: 10px 20px;
@@ -104,6 +98,10 @@ h1, h2, h3, h4, h5,.header nav button {
 }
 .homeImage {
     background: url('../images/image3.jpg');
+    overflow: hidden;
+}
+.homeImageDiv {
+    overflow: hidden;
 }
 .homeImageDiv,.aboutContainer {
     width: max(50%, 300px);
@@ -132,16 +130,29 @@ h1, h2, h3, h4, h5,.header nav button {
     flex-direction: column;
     height: fit-content;
 }
-.aboutContainer h4 {
+.aboutContainer h4, .firstServiceDiv h4 {
     font-size: 2.5rem;
     margin: 0;
     text-decoration: underline;
     padding: 0;
 }
-.aboutContainer p {
+.aboutContainer p, .firstServiceDiv p {
     font-size: 0.8rem;
     margin: 0;
     padding: 0;
     width: 40ch;
     letter-spacing: 3px;
+}
+
+/* SERVICE TAB */
+.firstServiceDiv {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.firstServiceDiv h4 {
+    width: 20ch;
+    text-decoration: none;
 }
