@@ -3,10 +3,8 @@ import image from '../images/image3.jpg';
 import cake from '../images/image5.jpg';
 
 export const Home = (function() {
-    const body = document.querySelector('body');
-    body.style.backgroundColor = 'whitesmoke';
     const content = document.querySelector('#content');
-    
+
     const welcome = () => {
         const container = document.createElement('div');
         const imageDiv = document.createElement('div');
@@ -27,7 +25,7 @@ export const Home = (function() {
         wrapper.appendChild(nameDiv);
         wrapper.appendChild(paragraph);
         wrapper.appendChild(button);
-        wrapper.classList.add('homeWrapper')
+        wrapper.classList.add('homeWrapper');
         container.appendChild(wrapper);
 
         myImg.src = image;
@@ -40,7 +38,6 @@ export const Home = (function() {
         container.classList.add('homeContainer');
         container.classList.add('present')
         content.appendChild(container);
-
         about();
     }
 

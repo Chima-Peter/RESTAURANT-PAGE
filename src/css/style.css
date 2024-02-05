@@ -8,7 +8,7 @@
 }
 
 body {
-    padding: 20px 20px 0px 10%;
+    padding: 0px 20px 0px 10%;
     margin: 0px;
     display: flex;
     flex-direction: column;
@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5,.header nav button {
 /* NAV BAR */
 .header {
     padding: 0px;
-    margin: 0px 0px 20% 0px;
+    margin: 0px;
 }
 .header nav {
     width: 100%;
@@ -48,18 +48,29 @@ h1, h2, h3, h4, h5,.header nav button {
     border: 1px solid black;
     border-radius: 10px;
 }
+#active {
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    border-radius: 10px;
+}
 
 /* HOME TAB */
 
 .homeContainer {
+    margin: 20% 0px 0px 0px;
     display: flex;
     flex-wrap: wrap;
+    padding-left: 20px;
     gap: 10px;
     width: 100%;
     justify-content: space-between;
     height: fit-content;
     box-sizing: border-box;
-    box-shadow: 0px 3px 0.8px 0.3px darkgrey;
+    border-radius: 5px;
+    box-shadow: 0px 9px 7px -3px #999999;
+    -webkit-box-shadow: 0px 9px 7px -3px #999999;
+    -moz-box-shadow: 0px 9px 7px -3px #999999;
 }
 
 
@@ -95,6 +106,7 @@ h1, h2, h3, h4, h5,.header nav button {
     width: fit-content;
     border: 1px solid orangered;
     font-weight: bolder;
+    box-shadow: 0 0.2em 1em orangered;
 }
 .homeImage {
     background: url('../images/image3.jpg');
@@ -136,7 +148,7 @@ h1, h2, h3, h4, h5,.header nav button {
     text-decoration: underline;
     padding: 0;
 }
-.aboutContainer p, .firstServiceDiv p {
+.aboutContainer p {
     font-size: 0.8rem;
     margin: 0;
     padding: 0;
@@ -146,13 +158,74 @@ h1, h2, h3, h4, h5,.header nav button {
 
 /* SERVICE TAB */
 .firstServiceDiv {
+    margin-top: 20px;
     width: 100%;
     height: fit-content;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
+    align-self: center;
+}
+.firstServiceDiv button {
+    align-self: center;
 }
 .firstServiceDiv h4 {
-    width: 20ch;
     text-decoration: none;
+    align-self: center;
+}
+.firstServiceDiv p {
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+/* EVENT PART */
+.mainDiv {
+    margin: 10% 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.mainDiv1 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.tabImage {
+    background: url('../images/glass-cocktail.svg');
+    width: 30px;
+    height: 30px;
+}
+.tabDiv {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    gap: 10px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 9px 7px -3px #999999;
+    -webkit-box-shadow: 0px 9px 7px -3px #999999;
+    -moz-box-shadow: 0px 9px 7px -3px #999999;
+    flex-direction: column;
+    background-color: white;
+}
+.tabDiv p {
+    padding: 0px;
+    margin: 0px;
+    width: 30ch;
+    line-height: 1.5;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+}
+.tabDiv h3 {
+    padding: 0px;
+    margin: 0px;
+    font-size: 1rem;
 }
