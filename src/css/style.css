@@ -132,6 +132,7 @@ h1, h2, h3, h4, h5,.header nav button {
     display: flex;
     flex-wrap: wrap-reverse;
     gap: 40px;
+    margin-bottom: 20px;
 }
 
 .aboutContainer {
@@ -165,6 +166,7 @@ h1, h2, h3, h4, h5,.header nav button {
     flex-direction: column;
     gap: 30px;
     align-self: center;
+    margin-bottom: 20px;
 }
 .firstServiceDiv button {
     align-self: center;
