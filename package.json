@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "build": "webpack --config webpack.prod.js",
-    "start": "webpack serve --open --config webpack.dev.js"
+    "start": "webpack serve --open --config webpack.dev.js",
+    "gh-pages": "git subtree push --prefix dist origin gh-pages"
   },
   "author": "OJIMMA CHIMA PETER <chimaojimma@gmail.com>",
   "license": "ISC",
