@@ -25,7 +25,7 @@ button2.addEventListener('click', () => {
     button3.id = '';
     body.style.backgroundColor = 'whitesmoke';
     clear();
-    Service.first();
+    Service.tab();
 });
 button3.addEventListener('click', () => {
     button3.id = 'active';

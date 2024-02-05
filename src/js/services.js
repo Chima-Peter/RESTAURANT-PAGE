@@ -47,6 +47,7 @@ export const Service = (function () {
         mainDiv.classList.add('mainDiv');
         mainDiv.appendChild(mainDiv1);
         mainDiv.appendChild(mainDiv2);
+        mainDiv.classList.add('present');
         content.appendChild(mainDiv); 
         first();
     }
@@ -75,5 +76,5 @@ export const Service = (function () {
 
         content.appendChild(firstDiv);
     }
-    return { first };
+    return { tab };
 })();
