@@ -1,7 +1,8 @@
 import  "../css/style.css";
 import { Home } from './home';
 import { clear } from './clear';
-import { Service } from './services'
+import { Service } from './services';
+import { Contact } from "./contact";
 
 const body = document.querySelector('body')
 const button1 = document.querySelector("#button1");
@@ -33,5 +34,5 @@ button3.addEventListener('click', () => {
     button1.id = '';
     body.style.backgroundColor = 'white';
     clear();
-    Home.welcome();
+    Contact.first();
 });

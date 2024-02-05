@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5,.header nav button {
 }
 
 
-.homeWrapper {
+.homeWrapper, .contactWrapper {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -82,14 +82,14 @@ h1, h2, h3, h4, h5,.header nav button {
     width: fit-content;
 }
 
-.homeWrapper div h2 {
+.homeWrapper div h2, .contactWrapper h2 {
     font-size: 70px;
     color: black;
     padding: 0px;
     font-size: 2.5rem;
     margin: 0px;
 }
-.homeWrapper p {
+.homeWrapper p, .contactWrapper p {
     width: 45ch;
     line-height: 2;
     letter-spacing: 2px;
@@ -99,7 +99,7 @@ h1, h2, h3, h4, h5,.header nav button {
     margin: 0px;
     font-size: 0.8rem;
 }
-.homeWrapper button, .aboutContainer button, .firstServiceDiv button {
+.homeWrapper button, .aboutContainer button, .firstServiceDiv button, .contactWrapper button {
     background-color: orangered;
     color: white;
     padding: 10px 20px;
@@ -184,7 +184,7 @@ h1, h2, h3, h4, h5,.header nav button {
 
 /* EVENT PART */
 .mainDiv {
-    margin: 10% 0px 0px 0px;
+    margin: 20% 0px 0px 0px;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -228,4 +228,25 @@ h1, h2, h3, h4, h5,.header nav button {
     padding: 0px;
     margin: 0px;
     font-size: 1rem;
+}
+
+/* CONTACT TAB */
+.contactDiv {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin: 20% 0px 0px 0px;
+    flex-wrap: wrap;
+}
+.contactWrapper {
+    box-shadow: 149px 2px 18px 0px rgba(255,255,255,0.29);
+-webkit-box-shadow: 149px 2px 18px 0px rgba(255,255,255,0.29);
+-moz-box-shadow: 149px 2px 18px 0px rgba(255,255,255,0.29);
+    z-index: 99;
+}
+.contactImgDiv {
+    width: max(50%, 600px);
+}
+.contactImg {
+    background: url('../images/image4.jpg');
 }
