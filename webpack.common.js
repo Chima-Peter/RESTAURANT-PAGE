@@ -5,15 +5,15 @@ module.exports = {
     entry: './src/js/index.js',
     plugins: [
         new HtmlWebpackPlugin({
-            template: './src/template.html'
+            template: './src/template.html',
+            minify: {
+                removeComments: true,
+                collapseWhitespace: true,
+            }
         })
     ],
     module: {
         rules: [
-            {
-                test: /\.css$/,
-                use: ['style-loader', 'css-loader']
-            },
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
                 type: 'asset/resource',
